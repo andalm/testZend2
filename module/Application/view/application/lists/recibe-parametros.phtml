@@ -1,0 +1,10 @@
+<h1><?php echo $this->saludo ?></h1>
+<h2>Mensaje: <?php echo $this->otro ?></h2>
+<ul>
+	<?php foreach($this->nombres as $nombre): ?>
+		<li><?php echo $nombre ?></li>
+	<?php endforeach ?>
+</ul>
+<?php if(!empty($this->parametro)): ?>
+	<p>Parametro enviado desde otraVista(<?php print_r($this->parametro) ?>)</p>
+<?php endif ?>
